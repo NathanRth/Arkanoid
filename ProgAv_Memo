@@ -1,0 +1,23 @@
+make release -> sans flags = plus rapide
+voir dossier build/release pour les exécutables en sortie
+
+Classe Game : contient la scene en cours
+Classe Scene : arbre des scènes du jeu avec relation parent/enfant
+Classe Level : Scene contenant des actions du joueur (bricks toussa toussa)
+
+fichier texte de niveau :
+13 20 <width> <height>
+0	<plateau cylindrique?>
+0 0 0 0 0 0 0 0 0 0 0 0 0		<tableau d'id de brick ou autres éléments>
+0 1 0 0 0 0 0 0 0 0 0 0 0		<suggestion : donner des id supplémentaires pour les brick contenant des bonus/malus>
+0 0 0 0 2 0 0 0 0 0 0 0 0		<ex: brick rouge id = 1 -> brick rouge avec bonus numéro 1 : id = 21>
+0 0 0 0 0 0 3 0 0 0 0 0 0
+0 0 5 0 0 0 0 0 0 0 0 0 0
+...
+...
+0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
+
+
+Chapeau / pyramide / balles triple = HARMFULS -> 100pts, apparaissent en fct du fond (1 seule meme figure par level)
